@@ -1,0 +1,26 @@
+.button{
+    -fx-border-color: #5c9ce0;
+    -fx-border-width: 3;
+}
+
+.button:hover{
+    -fx-background-color: #c2c7cf;
+}
+
+.button:pressed{
+    -fx-background-color: #aab3bd;
+}
+
+.weather-pane{
+    -fx-background-color: #5c9ce0;
+    -fx-background-radius: 50;
+}
+
+.city-field{
+    -fx-border-color: #5c9ce0;
+    -fx-border-width: 3;
+}
+
+.base-pane{
+    -fx-background-color: #c2c7cf;
+}
