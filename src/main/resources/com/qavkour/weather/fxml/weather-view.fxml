@@ -55,10 +55,28 @@
          </font>
       </Text>
    </AnchorPane>
-   <Label fx:id="temperature" layoutX="219.0" layoutY="250.0" prefHeight="31.0" prefWidth="195.0" />
-   <Label fx:id="feels_like" layoutX="250.0" layoutY="300.0" prefHeight="31.0" prefWidth="195.0" />
-   <Label fx:id="max" layoutX="176.0" layoutY="350.0" prefHeight="31.0" prefWidth="195.0" />
-   <Label fx:id="min" layoutX="153.0" layoutY="400.0" prefHeight="31.0" prefWidth="195.0" />
-   <Label fx:id="speed_wind" layoutX="261.0" layoutY="450.0" prefHeight="31.0" prefWidth="195.0" />
-   <Label fx:id="pressure" layoutX="176.0" layoutY="500.0" prefHeight="31.0" prefWidth="195.0" />
+   <Label fx:id="temperature" layoutX="210.0" layoutY="250.0" prefHeight="31.0" prefWidth="350.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <Label fx:id="feels_like" layoutX="235.0" layoutY="300.0" prefHeight="31.0" prefWidth="195.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <Label fx:id="max_temp" layoutX="164.0" layoutY="350.0" prefHeight="31.0" prefWidth="195.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <Label fx:id="min_temp" layoutX="147.0" layoutY="400.0" prefHeight="31.0" prefWidth="195.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <Label fx:id="speed_wind" layoutX="251.0" layoutY="450.0" prefHeight="31.0" prefWidth="195.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+   <Label fx:id="pressure" layoutX="164.0" layoutY="500.0" prefHeight="31.0" prefWidth="195.0" AnchorPane.bottomAnchor="44.0" AnchorPane.topAnchor="500.0">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
 </AnchorPane>
