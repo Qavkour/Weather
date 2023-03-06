@@ -22,17 +22,17 @@ public class Weather {
 	public Weather(String city) {
 		String api = "563bf0a0c62dfc3e2931bbd6dc2e6808";
 		urlAddress = "https://api.openweathermap.org/data" +
-				"/2.5/weather?q=" + city + "&APPID=" + api;
-		setValues();
+				"/2.5/weather?q=" + city + "&APPID=" + api;   // формируем ссылку, подставляя город, погодна которого нам нужна,
+		setValues();																				// и наш API
 	}
 
 	private String getJson(){
 		StringBuffer json = new StringBuffer();
 		try {
 			URL url = new URL(urlAddress);
-			URLConnection urlConn = url.openConnection();
+			URLConnection urlConn = url.openConnection();  // Делаем запрос по ссылке, сформированной в конструкторе
 
-			BufferedReader br = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));
+			BufferedReader br = new BufferedReader(new InputStreamReader(urlConn.getInputStream()));  // Читаем ответ сервера в формате json
 			String line;
 
 			while((line = br.readLine()) != null)
@@ -53,7 +53,7 @@ public class Weather {
 		if(str.contains("Ошибка")){
 			temperature = str;
 		} else {
-			JSONObject jsonobj = new JSONObject(str);
+			JSONObject jsonobj = new JSONObject(str);   // Далее инициализируем наши переменные нужными значениями из json
 			temperature = "" + (int) (jsonobj.getJSONObject("main").getDouble("temp") - 273) + " C";
 			feels_like = "" + (int) (jsonobj.getJSONObject("main").getDouble("feels_like") - 273) + " C";
 			max_temp = "" + (int) (jsonobj.getJSONObject("main").getDouble("temp_max") - 273) + " C";

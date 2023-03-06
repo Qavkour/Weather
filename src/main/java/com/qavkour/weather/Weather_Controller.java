@@ -46,8 +46,9 @@ public class Weather_Controller {
 	}
 
 	private void getWeather() {
-		Weather weather = new Weather(city_field.getText().trim());
-
+		Weather weather = new Weather(city_field.getText().trim()); // Создаем объект, передавая в качестве параметра
+																						// название нужного нам города
+		////////// Выводим на экран значения //////////
 		temperature.setText(weather.getTemperature());
 		feels_like.setText(weather.getFeels_like());
 		max_temp.setText(weather.getMax_temp());
